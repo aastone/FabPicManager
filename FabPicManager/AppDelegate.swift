@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let mainStoryBoard = UIStoryboard.init(name: "Main", bundle: NSBundle.mainBundle())
+        let mainVC = mainStoryBoard.instantiateViewControllerWithIdentifier("FPMMainViewController")
+        let navVC = UINavigationController.init(rootViewController: mainVC)
+        
+        window?.rootViewController = navVC
         return true
     }
 

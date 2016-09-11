@@ -15,6 +15,13 @@
 		8EA8AB911D841575005EBC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA8AB8F1D841575005EBC2B /* LaunchScreen.storyboard */; };
 		8EA8AB9C1D841575005EBC2B /* FabPicManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8AB9B1D841575005EBC2B /* FabPicManagerTests.swift */; };
 		8EA8ABA71D841575005EBC2B /* FabPicManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8ABA61D841575005EBC2B /* FabPicManagerUITests.swift */; };
+		8EA8ABB71D841B88005EBC2B /* FPMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8ABB61D841B88005EBC2B /* FPMMainViewController.swift */; };
+		8EA8ABB91D841DEC005EBC2B /* FPMPublicNameStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8ABB81D841DEC005EBC2B /* FPMPublicNameStr.swift */; };
+		8EA8ABBB1D8446A2005EBC2B /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA8ABBA1D8446A1005EBC2B /* Photos.framework */; };
+		8EA8ABC01D8449F3005EBC2B /* STNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8ABBF1D8449F3005EBC2B /* STNViewController.swift */; };
+		8EA8ABC41D844B2D005EBC2B /* FPMDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8ABC31D844B2D005EBC2B /* FPMDetailViewController.swift */; };
+		8EA8ABCB1D857C0D005EBC2B /* FPMBasicPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8ABC91D857C0D005EBC2B /* FPMBasicPhotoCollectionViewCell.swift */; };
+		8EA8ABCC1D857C0D005EBC2B /* FPMBasicPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA8ABCA1D857C0D005EBC2B /* FPMBasicPhotoCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		8EA8ABA21D841575005EBC2B /* FabPicManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FabPicManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA8ABA61D841575005EBC2B /* FabPicManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabPicManagerUITests.swift; sourceTree = "<group>"; };
 		8EA8ABA81D841575005EBC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EA8ABB61D841B88005EBC2B /* FPMMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPMMainViewController.swift; sourceTree = "<group>"; };
+		8EA8ABB81D841DEC005EBC2B /* FPMPublicNameStr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FPMPublicNameStr.swift; path = Public/FPMPublicNameStr.swift; sourceTree = "<group>"; };
+		8EA8ABBA1D8446A1005EBC2B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		8EA8ABBF1D8449F3005EBC2B /* STNViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = STNViewController.swift; path = Base/STNViewController.swift; sourceTree = "<group>"; };
+		8EA8ABC31D844B2D005EBC2B /* FPMDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FPMDetailViewController.swift; path = VC/FPMDetailViewController.swift; sourceTree = "<group>"; };
+		8EA8ABC91D857C0D005EBC2B /* FPMBasicPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FPMBasicPhotoCollectionViewCell.swift; path = View/FPMBasicPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		8EA8ABCA1D857C0D005EBC2B /* FPMBasicPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FPMBasicPhotoCollectionViewCell.xib; path = View/FPMBasicPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA8ABBB1D8446A2005EBC2B /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,7 @@
 				8EA8AB9A1D841575005EBC2B /* FabPicManagerTests */,
 				8EA8ABA51D841575005EBC2B /* FabPicManagerUITests */,
 				8EA8AB811D841575005EBC2B /* Products */,
+				8EA8ABBC1D8446D1005EBC2B /* Libs */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +115,14 @@
 		8EA8AB821D841575005EBC2B /* FabPicManager */ = {
 			isa = PBXGroup;
 			children = (
-				8EA8AB831D841575005EBC2B /* AppDelegate.swift */,
+				8EA8ABBE1D8449B8005EBC2B /* Base */,
 				8EA8AB851D841575005EBC2B /* ViewController.swift */,
-				8EA8AB871D841575005EBC2B /* Main.storyboard */,
-				8EA8AB8D1D841575005EBC2B /* Assets.xcassets */,
-				8EA8AB8F1D841575005EBC2B /* LaunchScreen.storyboard */,
-				8EA8AB921D841575005EBC2B /* Info.plist */,
-				8EA8AB8A1D841575005EBC2B /* FabPicManager.xcdatamodeld */,
+				8EA8ABBD1D8448B7005EBC2B /* VC */,
+				8EA8ABC81D857B45005EBC2B /* ViewModel */,
+				8EA8ABC71D857B3E005EBC2B /* Model */,
+				8EA8ABC61D857B28005EBC2B /* View */,
+				8EA8ABC21D844A89005EBC2B /* Public */,
+				8EA8ABC11D844A5B005EBC2B /* Others */,
 			);
 			path = FabPicManager;
 			sourceTree = "<group>";
@@ -126,6 +143,75 @@
 				8EA8ABA81D841575005EBC2B /* Info.plist */,
 			);
 			path = FabPicManagerUITests;
+			sourceTree = "<group>";
+		};
+		8EA8ABBC1D8446D1005EBC2B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				8EA8ABBA1D8446A1005EBC2B /* Photos.framework */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		8EA8ABBD1D8448B7005EBC2B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				8EA8ABB61D841B88005EBC2B /* FPMMainViewController.swift */,
+				8EA8ABC31D844B2D005EBC2B /* FPMDetailViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		8EA8ABBE1D8449B8005EBC2B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8EA8ABBF1D8449F3005EBC2B /* STNViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		8EA8ABC11D844A5B005EBC2B /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8EA8AB871D841575005EBC2B /* Main.storyboard */,
+				8EA8AB8A1D841575005EBC2B /* FabPicManager.xcdatamodeld */,
+				8EA8AB921D841575005EBC2B /* Info.plist */,
+				8EA8AB8F1D841575005EBC2B /* LaunchScreen.storyboard */,
+				8EA8AB8D1D841575005EBC2B /* Assets.xcassets */,
+				8EA8AB831D841575005EBC2B /* AppDelegate.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		8EA8ABC21D844A89005EBC2B /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				8EA8ABB81D841DEC005EBC2B /* FPMPublicNameStr.swift */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		8EA8ABC61D857B28005EBC2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EA8ABC91D857C0D005EBC2B /* FPMBasicPhotoCollectionViewCell.swift */,
+				8EA8ABCA1D857C0D005EBC2B /* FPMBasicPhotoCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8EA8ABC71D857B3E005EBC2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8EA8ABC81D857B45005EBC2B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +323,7 @@
 			files = (
 				8EA8AB911D841575005EBC2B /* LaunchScreen.storyboard in Resources */,
 				8EA8AB8E1D841575005EBC2B /* Assets.xcassets in Resources */,
+				8EA8ABCC1D857C0D005EBC2B /* FPMBasicPhotoCollectionViewCell.xib in Resources */,
 				8EA8AB891D841575005EBC2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +349,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA8ABC41D844B2D005EBC2B /* FPMDetailViewController.swift in Sources */,
+				8EA8ABC01D8449F3005EBC2B /* STNViewController.swift in Sources */,
 				8EA8AB861D841575005EBC2B /* ViewController.swift in Sources */,
+				8EA8ABB71D841B88005EBC2B /* FPMMainViewController.swift in Sources */,
+				8EA8ABB91D841DEC005EBC2B /* FPMPublicNameStr.swift in Sources */,
 				8EA8AB841D841575005EBC2B /* AppDelegate.swift in Sources */,
+				8EA8ABCB1D857C0D005EBC2B /* FPMBasicPhotoCollectionViewCell.swift in Sources */,
 				8EA8AB8C1D841575005EBC2B /* FabPicManager.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -395,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -406,10 +498,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FabPicManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.me.stone.FabPicManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.stone.FabPicM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -417,10 +513,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FabPicManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.me.stone.FabPicManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wang.stone.FabPicM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -489,6 +589,7 @@
 				8EA8ABAD1D841575005EBC2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EA8ABAE1D841575005EBC2B /* Build configuration list for PBXNativeTarget "FabPicManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +598,7 @@
 				8EA8ABB01D841575005EBC2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EA8ABB11D841575005EBC2B /* Build configuration list for PBXNativeTarget "FabPicManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +607,7 @@
 				8EA8ABB31D841575005EBC2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
