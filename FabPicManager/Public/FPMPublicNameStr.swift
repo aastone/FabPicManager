@@ -7,19 +7,3 @@
 //
 
 import Foundation
-
-struct kFPMStoryboard {
-    let kViewController:String = "vie"
-    
-}
-
-//     FPMMainViewController = "FPMMainViewController"
-//let ViewController = "ViewController"
-
-    
-class kFPM: NSObject {
-    let kViewController = "ViewController"
-    func hehe() -> String {
-        return kViewController
-    }
-}

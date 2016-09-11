@@ -18,6 +18,9 @@ class FPMMainViewController: STNViewController, UICollectionViewDelegate, UIColl
 
         // Do any additional setup after loading the view.
         requestPhotoAccess()
+        
+        setupUI()
+        
         let manager = PHImageManager.defaultManager()
         
         let albumResults = PHAssetCollection.fetchAssetCollectionsWithType(.Album, subtype: .AlbumRegular, options: nil)
@@ -31,6 +34,10 @@ class FPMMainViewController: STNViewController, UICollectionViewDelegate, UIColl
         
     }
     
+    func setupUI() -> Void {
+        self.collectionView.registerClass(FPMBasicPhotoCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(FPMBasicPhotoCollectionViewCell.self))
+    }
+    
     // MARK: CollectionView
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
@@ -40,7 +47,7 @@ class FPMMainViewController: STNViewController, UICollectionViewDelegate, UIColl
         return 1
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = FPMBasicPhotoCollectionViewCell.init()
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(NSStringFromClass(FPMBasicPhotoCollectionViewCell.self), forIndexPath: indexPath)
         
         return cell
     }
